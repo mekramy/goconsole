@@ -48,26 +48,26 @@ func PrintF(format string, args ...any) {
 	var content strings.Builder
 	replacer := strings.NewReplacer(
 		// styles
-		"B", BOLD,
-		"U", UNDERLINE,
-		"S", STRIKE,
-		"I", ITALIC,
+		"B", boldStyle,
+		"U", underlineStyle,
+		"S", strikeStyle,
+		"I", italicStyle,
 		// background
-		"rb", RED_BACK,
-		"gb", GREEN_BACK,
-		"yb", YELLOW_BACK,
-		"bb", BLUE_BACK,
-		"pb", PURPLE_BACK,
-		"cb", CYAN_BACK,
-		"wb", WHITE_BACK,
+		"rb", redBack,
+		"gb", greenBack,
+		"yb", yellowBack,
+		"bb", blueBack,
+		"pb", purpleBack,
+		"cb", cyanBack,
+		"wb", whiteBack,
 		// colors
-		"r", RED,
-		"g", GREEN,
-		"y", YELLOW,
-		"b", BLUE,
-		"p", PURPLE,
-		"c", CYAN,
-		"w", WHITE,
+		"r", redColor,
+		"g", greenColor,
+		"y", yellowColor,
+		"b", blueColor,
+		"p", purpleColor,
+		"c", cyanColor,
+		"w", whiteColor,
 	)
 
 	for i := 0; i < len(format); i++ {
@@ -88,7 +88,7 @@ func PrintF(format string, args ...any) {
 				inside = false
 				result.WriteString(replacer.Replace(token.String()))
 				result.WriteString(content.String())
-				result.WriteString(RESET)
+				result.WriteString(resetStyle)
 			} else {
 				content.WriteByte(format[i])
 			}

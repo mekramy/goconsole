@@ -1,29 +1,29 @@
 package goconsole
 
 const (
-	RESET     = "\033[0m"
-	BOLD      = "\033[1m"
-	UNDERLINE = "\033[4m"
-	STRIKE    = "\033[9m"
-	ITALIC    = "\033[3m"
+	resetStyle     = "\033[0m"
+	boldStyle      = "\033[1m"
+	underlineStyle = "\033[4m"
+	strikeStyle    = "\033[9m"
+	italicStyle    = "\033[3m"
 )
 
 const (
-	RED_BACK    = "\033[41m"
-	GREEN_BACK  = "\033[42m"
-	YELLOW_BACK = "\033[43m"
-	BLUE_BACK   = "\033[44m"
-	PURPLE_BACK = "\033[45m"
-	CYAN_BACK   = "\033[46m"
-	WHITE_BACK  = "\033[47m"
+	redBack    = "\033[41m"
+	greenBack  = "\033[42m"
+	yellowBack = "\033[43m"
+	blueBack   = "\033[44m"
+	purpleBack = "\033[45m"
+	cyanBack   = "\033[46m"
+	whiteBack  = "\033[47m"
 )
 
 const (
-	RED    = "\033[31m"
-	GREEN  = "\033[32m"
-	YELLOW = "\033[33m"
-	BLUE   = "\033[34m"
-	PURPLE = "\033[35m"
-	CYAN   = "\033[36m"
-	WHITE  = "\033[37m"
+	redColor    = "\033[31m"
+	greenColor  = "\033[32m"
+	yellowColor = "\033[33m"
+	blueColor   = "\033[34m"
+	purpleColor = "\033[35m"
+	cyanColor   = "\033[36m"
+	whiteColor  = "\033[37m"
 )

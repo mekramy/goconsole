@@ -46,13 +46,13 @@ func TestColors(t *testing.T) {
 	goconsole.Message().
 		Blue("Message").
 		Italic().
-		Strike().
+		Underline().
 		Indent().
-		Print("Welcome")
+		Printf("Welcome %s", "John")
 	goconsole.Message().
 		Red("Error").
 		Italic().
-		Underline().
+		Strike().
 		Indent().
 		Tags("One", "Two").
 		Print("some data is invalid")
